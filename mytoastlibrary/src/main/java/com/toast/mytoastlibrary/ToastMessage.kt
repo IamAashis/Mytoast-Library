@@ -37,22 +37,6 @@ class ToastMessage {
 
     }
 
-    /*   fun showToast() {
-           val inflater = layoutInflater
-           val layout: View = inflater.inflate(
-               android.R.layout.,
-               findViewById<View>(android.R.id.toast_root) as ViewGroup
-           )
-           val toastText: TextView = layout.findViewById(android.R.id.toast_text)
-           val toastImage: ImageView = layout.findViewById(android.R.id.toast_image)
-           toastText.text = "This is a different text"
-   //        toastImage.setImageResource(R.drawable.ic_toasticon)
-           val toast = Toast(applicationContext)
-           toast.setGravity(Gravity.CENTER, 0, 0)
-           toast.duration = Toast.LENGTH_LONG
-           toast.setView(layout)
-           toast.show()
-       }*/
 
     fun showShortToast(c: Context?, message: String?) {
         Toast.makeText(c, message, Toast.LENGTH_SHORT).show()
