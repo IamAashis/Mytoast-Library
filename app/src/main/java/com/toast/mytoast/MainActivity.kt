@@ -1,33 +1,41 @@
 package com.toast.mytoast
 
 import android.os.Bundle
-import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.AppCompatButton
+import androidx.core.content.ContextCompat
 import com.toast.mytoastlibrary.ToastMessage
 
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var imvPicassso: ImageView
+    lateinit var btnToastTestOne: AppCompatButton
+    lateinit var btnToastTestTwo: AppCompatButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        imvPicassso = findViewById(R.id.imvPicassso)
+        btnToastTestOne = findViewById(R.id.btnToastTestOne)
+        btnToastTestTwo = findViewById(R.id.btnToastTestTwo)
 
-    /*    Glide.with(this)
-            .load("https://cdn2.iconfinder.com/data/icons/sports-i-color/300/25-512.png")
-            .centerCrop()
-            .into(imvPicassso)*/
-//        ToastMessage().myToast(this, "Hello")
-//        ToastMessage().loadProfile("https://cdn2.iconfinder.com/data/icons/sports-i-color/300/25-512.png", imvPicassso)
+//        ToastMessage().customToast(this, imvPicassso, "https://i.imgur.com/DvpvklR.png")
 
-       ToastMessage().customToast(this, imvPicassso, "https://i.imgur.com/DvpvklR.png")
+        btnToastTestOne.setOnClickListener {
+            ToastMessage().showToastWithIcon(
+                this,
+                "test success",
+                ContextCompat.getDrawable(this, android.R.drawable.ic_lock_idle_alarm)
+            )
+        }
 
+        btnToastTestTwo.setOnClickListener {
+            ToastMessage().showToastWithIcon(
+                this,
+                "testsuccess",
+                url = "https://i.imgur.com/DvpvklR.png"
+            )
+        }
 
-        ToastMessage().myToast(this, "This is Toast Message")
     }
-
-
 }

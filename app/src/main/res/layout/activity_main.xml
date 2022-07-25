@@ -3,11 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imvPicassso"
-        android:layout_width="150dp"
-        android:layout_height="150dp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnToastTestOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="test Toast 1" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnToastTestTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:text="test Toast 2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnToastTestThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:text="test Toast 3" />
 </LinearLayout>
