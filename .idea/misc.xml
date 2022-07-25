@@ -5,10 +5,13 @@
       <map>
         <entry key="..\:/EKBANA/Android/MyToast/app/src/main/res/layout/activity_main.xml" value="0.1359375" />
         <entry key="..\:/EKBANA/Android/MyToast/mytoastlibrary/src/main/res/layout/toast_custom.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3229166666666667" />
+        <entry key="mytoastlibrary/src/main/res/drawable/toast_background.xml" value="0.2095" />
+        <entry key="mytoastlibrary/src/main/res/layout/toast_custom.xml" value="0.33" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
